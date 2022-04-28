@@ -1,0 +1,13 @@
+@mixin custom-border($background-color, $border, $border-radius, $font-color) {
+   background: $background-color;
+   border: $border;
+   border-radius: $border-radius;
+   color: $font-color;
+}
+
+@mixin flex-centerize($direction, $align, $justify) {
+   align-items: $align;
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+}

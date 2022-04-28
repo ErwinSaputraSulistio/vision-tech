@@ -1,7 +1,7 @@
 class resultStatus {
    static success = (res, message, data) => {
       res.status(200).json({
-         status: "--> OK.",
+         status: "OK.",
          message, 
          data 
       })
@@ -9,7 +9,7 @@ class resultStatus {
    static failed = (res, code, error) => {
       res.status(code).json({ 
          code,
-         status: "--> Not OK.",
+         status: "Not OK.",
          error 
       })
    }
