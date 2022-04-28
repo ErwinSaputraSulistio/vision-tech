@@ -4,6 +4,10 @@
   	</div>
 </template>
 
+<script>
+	document.title = "VisionTech"
+</script>
+
 <style lang="scss">
 	.container {
 		@include flex-centerize(row, center, center);
