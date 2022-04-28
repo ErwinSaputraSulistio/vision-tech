@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view />
+  <router-view/>
 </template>
 
 <style lang="scss">
@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: $primary;
+  color: #2c3e50;
 }
 
 nav {
@@ -20,10 +20,10 @@ nav {
 
   a {
     font-weight: bold;
-    color: $primary;
+    color: #2c3e50;
 
     &.router-link-exact-active {
-      color: $secondary;
+      color: #42b983;
     }
   }
 }

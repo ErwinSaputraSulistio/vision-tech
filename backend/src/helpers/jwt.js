@@ -1,12 +1,11 @@
 const jwt = require("jsonwebtoken")
-const JWT_SECRET = "secret"
 
 class jwtHandler {
    static generate = (payload) => {
-      return jwt.sign(payload, JWT_SECRET)
+      return jwt.sign(payload, "secret")
    }
    static verify = (token) => {
-      return jwt.verify(token, JWT_SECRET)
+      return jwt.verify(token, "secret")
    }
 }
 

@@ -8,7 +8,7 @@ class userController {
       const { email, password } = req.body
       const result = await login({ email })
       if(result === null) { 
-         failed(res, 404, "Can't found any user with this email!") 
+         failed(res, 401, "Can't found any user with this email!") 
       }
       else {
          const checkPassword = compare(password, result.password)
@@ -17,7 +17,7 @@ class userController {
             success(res, "Login successful!", { email, password, token })
          }
          else { 
-            failed(res, 403, "Wrong password!") 
+            failed(res, 401, "Wrong password!") 
          }
       }
    }
