@@ -21,10 +21,18 @@
 			"modelValue",
 			"width"
 		],
-		methods: {
-			updateValue(event) {
-            this.$emit('update:modelValue', event.target.value);
-        }
+		// methods: {
+		// 	updateValue(event) {
+		// 		this.$emit('update:modelValue', event.target.value);
+		// 	}
+		// }
+		setup(props, ctx) {
+			function updateValue(event) {
+            	ctx.emit('update:modelValue', event.target.value);
+        	}
+			return {
+				updateValue,
+			}
 		}
 	}
 </script>
